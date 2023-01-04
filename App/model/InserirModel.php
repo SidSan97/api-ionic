@@ -6,9 +6,10 @@ class InserirModel extends Conexao
 {
     public function inserirNoBD($json)
     {
-        $modelo = $json['modelo'];
-        $cor    = $json['cor'];
-        $ano    = $json['ano'];
-        $placa  = $json['placa'];
+        $nome  = $json['nome'];
+        $email = $json['email'];
+        $cpf   = $json['cpf'];
+        $senha = $json['senha'];
+        $nivel = $json['nivel'];
     }
 }
