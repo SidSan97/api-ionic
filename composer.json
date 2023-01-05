@@ -1,0 +1,19 @@
+{
+    "name": "projetoionic/api",
+    "description": "Api feita para um aplicativo feito em Ionic",
+    "license": "proprietary",
+    "autoload": {
+        "psr-4": {
+            "Projetoionic\\Api\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "SidSan97",
+            "email": "sidnei1.8santiago@hotmail.com"
+        }
+    ],
+    "require": {
+        "php":">=7.2"
+    }
+}
