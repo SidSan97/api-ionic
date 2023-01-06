@@ -17,11 +17,13 @@ class ListarModel extends Conexao
 
             $json = json_encode(['status' => 200, 'dados' => $dados]);
             //$json = base64_encode($json);
-echo $json; 
-die;
+            echo $json; 
+
             //return $json;
         }
-        else
-            die("erro");
+        else {
+            $json = json_encode(['status' => 404, 'dados' => "dados não encontrados"]);
+            echo $json;
+        }
     }
 }
