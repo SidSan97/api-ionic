@@ -1,5 +1,8 @@
 <?php
 include('App/controller/ListarController.php');
+include('App/controller/BuscarController.php');
+
+use App\Controller\BuscarController;
 use App\Controller\InserirController;
 use App\Controller\ListarController;
 
@@ -17,4 +20,11 @@ if($_GET['q'] == "listar")
 {
     $listar = new ListarController();
     $listar->listar();
+}
+
+if($_GET['q'] == "busca")
+{
+    $dado = $_GET['v'];
+    $buscar = new BuscarController();
+    $buscar->busca($dado);   
 }
