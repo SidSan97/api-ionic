@@ -10,6 +10,7 @@ class InserirController
 {
     public function inserir($json)
     {
-        $inserirModel = new InserirModel($json);
+        $inserirModel = new InserirModel();
+        $inserirModel->inserirNoBD($json);
     }
 }

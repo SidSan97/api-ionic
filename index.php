@@ -1,6 +1,7 @@
 <?php
 include('App/controller/ListarController.php');
 include('App/controller/BuscarController.php');
+include('App/controller/InserirController.php');
 
 use App\Controller\BuscarController;
 use App\Controller\InserirController;
