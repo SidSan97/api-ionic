@@ -13,11 +13,6 @@ class InserirModel extends Conexao
         $cpf   = $json['cpf'];
         $senha = $json['senha'];
         $nivel = $json['nivel'];
-        /*$nome  = "Mike";
-        $email = "mike@email.com";
-        $cpf   = "145.987.463-47";
-        $senha = "mike123";
-        $nivel = "operador";*/
 
         $conn = $this->connect();
 
