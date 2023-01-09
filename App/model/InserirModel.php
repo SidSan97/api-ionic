@@ -12,6 +12,7 @@ class InserirModel extends Conexao
         $email = $json['email'];
         $cpf   = $json['cpf'];
         $senha = $json['senha'];
+        $senha = password_hash($senha, PASSWORD_BCRYPT);
         $nivel = $json['nivel'];
 
         $conn = $this->connect();
